@@ -1,16 +1,16 @@
 {
-    "name": "PHP Script to transfer LINE talk images to pCloud",
+    "name": "LINE images auto transfer",
     "description": "heroku 上にデプロイされる LINE Messaging API を利用して pCloud への画像の自動転送を行うサーバースクリプト",
     "repository": "https://github.com/grj1234/line-picture-auto-transfer-to-pcloud.git",
     "keywords": ["php", "line-messaging-api", "pcloud"],
     "env": {
       "LINE_CHANNEL_ACCESS_TOKEN": {
         "description": "Channel Access Token (LINE developers の Basic information で確認できます)"
-      }
+      },
       "PCLOUD_UID": {
         "description": "pCloud　へログインする際のメールアドレス"
-      }
-	  "PCLOUD_PASS": {
+      },
+      "PCLOUD_PASS": {
         "description": "pCloud　へログインする際のパスワード"
       }
     }
