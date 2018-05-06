@@ -1,4 +1,4 @@
-#LINE Messaging APIで追加になったメッセージタイプを試してみるスクリプトです。
+#LINE Messaging APIを使用して、トークに送信された画像をpCloudに転送するスクリプトです。
 
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
