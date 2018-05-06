@@ -22,7 +22,7 @@ if($type == "image"){
   );
   $picture_context = stream_context_create($picture_opts);
   $img_raw = file_get_contents("https://api.line.me/v2/bot/message/".$messageId."/content", false, $picture_context);
-  $curl_img = curl_init("https://webdav.pcloud.com/LINE/".$picture_filename);
+  $curl_img = curl_init("https://webdav.pcloud.com/".$picture_filename);
   curl_setopt($curl_img, CURLOPT_CUSTOMREQUEST, 'PUT');
   curl_setopt($curl_img, CURLOPT_HTTPHEADER, array('Authorization: Basic '.base64_encode($pCloud_UID.':'.$pCloud_Pass).'\r\nContent-Type: application/octet-stream\r\nContent-Length: '.strlen($img_raw).'\r\n'));
   curl_setopt($curl_img, CURLOPT_POSTFIELDS, $img_raw);
